@@ -1398,7 +1398,7 @@ $medium-breakpoint: em-calc(940);
 // 34. Top Bar
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-top-bar-classes: $include-html-classes;
+ $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
 // $topbar-bg-color: $oil;
@@ -1464,7 +1464,9 @@ $medium-breakpoint: em-calc(940);
 // $topbar-transition-speed: 300ms;
 // Using rem-calc for the below breakpoint causes issues with top bar
 // $topbar-breakpoint: #{lower-bound($medium-range)}; // Change to 9999px for always mobile layout
+$topbar-breakpoint: #{lower-bound($large-range)}; // Change to 9999px for always mobile layout
 // $topbar-media-query: "#{$screen} and (min-width:#{lower-bound($topbar-breakpoint)})";
+$topbar-media-query: "#{$screen} and (min-width:#{lower-bound($topbar-breakpoint)})";
 
 // Top-bar input styles
 // $topbar-input-height: rem-calc(28);
