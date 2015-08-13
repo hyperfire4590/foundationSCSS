@@ -2,6 +2,24 @@
 @import "foundation";
 @import "normalize";
 
+@media print {
+  html {
+    width: rem-calc(1280px);
+  }
+
+  @for $i from 1 through $total-columns {
+    .large-#{$i} {
+      width: percentage($i / $total-columns);
+    }
+  }
+  a[href*="/"]:after, a[href*="/"]:visited:after {content: normal;}
+
+  p {
+    page-break-inside: avoid;
+  }
+}
+
+
 // Or selectively include components
 // @import
 //   "foundation/components/accordion",

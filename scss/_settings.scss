@@ -70,7 +70,7 @@
 
 // We use this to control whether or not CSS classes come through in the gem files.
 $include-html-classes: true;
-// $include-print-styles: true;
+$include-print-styles: true;
 $include-html-global-classes: $include-html-classes;
 
 // b. Grid
@@ -163,7 +163,7 @@ $medium-breakpoint: em-calc(940);
 // $xlarge-range:  ($large-breakpoint  + em-calc(1), $xlarge-breakpoint);
 // $xxlarge-range: ($xlarge-breakpoint + em-calc(1), em-calc(99999999));
 
- $screen: "only screen";
+ $screen: "only print, screen";
 
 // $landscape: "#{$screen} and (orientation: landscape)";
 // $portrait: "#{$screen} and (orientation: portrait)";
